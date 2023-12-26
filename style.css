@@ -105,8 +105,8 @@ body {
   align-items: center;
   border-radius: 10px 10px 0px 10px;
   position: absolute;
-  top: 240px;
-  right: 210px;
+  top: 290px;
+  right: 260px;
 }
 
 .column-3 ::before {
