@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --Gradient-1: hsl(6, 100%, 80%);
+  --Gradient-2: hsl(335, 100%, 65%);
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+  --ff: "Raleway", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  background-image: url(./images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--ff);
+}
+
+.Container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  padding: 5rem;
+  margin-bottom: 7rem;
+}
+
+.column-1 {
+  background-color: var(--Dark-Blue);
+  padding: 5rem 5rem 2rem 3rem;
+  border-radius: 15px 120px 15px 15px;
+}
+
+.title {
+  margin-bottom: 1.3rem;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.file {
+  background-color: var(--Very-Dark-Blue);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.folder {
+  background-color: var(--Very-Dark-Blue);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.upload {
+  background-color: var(--Very-Dark-Blue);
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.storage-data {
+  background-color: var(--Dark-Blue);
+  width: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  padding: 2rem 2rem 2rem 2.5rem;
+  border-radius: 15px;
+}
+
+.column-3 {
+  background-color: white;
+  height: 80px;
+  width: 190px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 10px 0px 10px;
+  position: absolute;
+  top: 240px;
+  right: 300px;
+}
+
+.column-3 ::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-top: 20px solid white;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
+.text-info span {
+  font-weight: 700;
+  color: var(--Pale-Blue);
+}
+
+.storage-left span {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--Very-Dark-Blue);
+}
+
+.storage-left {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+}
+
+.progress-container {
+  width: 560px;
+  height: 18px;
+  background-color: var(--Very-Dark-Blue);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 78%;
+  background: linear-gradient(to left, var(--Gradient-2), var(--Gradient-1));
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 98%;
+  transform: translate(-50%, -50%);
+}
+
+.text-info {
+  color: var(--Pale-Blue);
+  margin-bottom: 1.2rem;
+}
+
+.storage {
+  display: flex;
+  color: var(--Pale-Blue);
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
